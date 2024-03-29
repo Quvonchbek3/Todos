@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRUD Todo LIST</title>
+  <!-- BOOTSTRAP CSS-->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="my-5 text-center">
+    <h1 class="display-2 text-primary">
+      Todo List
+    </h1>
+    <small>
+      by
+      <a href="https://www.github.com/Quvonchbek3">
+        Quvonchbek Nomozov
+      </a>
+    </small>
+  </header>
+  <main class="container">
+    <!-- <form id="form-create" class="mb-3"> -->
+    <div class="mb-3">
+      <input id="input-create" type="text" class="mb-1 form-control" placeholder="Type todo..." autocomplete="off" />
+      <span id="message-create" class="text-danger"></span>
+    </div>
+    <div class="btnEditsDelete">
+    <button class="btn btn-outline-primary" id="addBtn" onclick="showTodos()">Add</button>
+    <button class="btn btn-outline-primary" id="addBtn1">Save</button>
+    </div>
+    <!-- </form> -->
+
+    <ul id="list-group-todo" class="list-group mt-4"></ul>
+  </main>
+
+  <!-- SCRTIP -->
+  <!-- BOOSTRAP JS -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
